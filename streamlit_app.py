@@ -1,6 +1,15 @@
+
 import subprocess
+import sys
 import streamlit as st
-import os
+
+# Install missing packages
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+install("yfinance")  # Add other missing packages here
+
+# Rest of your code...
 
 st.title("Stock Trading App")
 
