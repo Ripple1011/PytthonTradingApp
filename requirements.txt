@@ -1,0 +1,5 @@
+streamlit==1.29.0
+# All dependencies from your original script
+yfinance==0.2.31
+pandas==2.1.4
+matplotlib==3.8.2
